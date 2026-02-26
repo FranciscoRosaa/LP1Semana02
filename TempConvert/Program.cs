@@ -27,6 +27,10 @@ namespace TempConvert
                     Console.WriteLine($"{temp:f2} F = {converted:f2} C");
                     Console.WriteLine($"Absolute value: {Math.Abs(converted):f2}");
                     break;
+                
+                default:
+                    Console.WriteLine("Invalid unit.");
+                    break;
             }
         }
     }
