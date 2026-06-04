@@ -2,20 +2,32 @@
 
 namespace Cilindro
 {
+    /// <summary>
+    /// Initializes the Program.
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Program that asks the user for the height and radius of a cylinder
+        /// and then convertes them into doubles and calculates the volume and
+        /// superficial area of said cylinder.
+        /// </summary>
+        /// <param name="args">Not used.</param>
         private static void Main(string[] args)
         {
-            Console.Write("Insere a altura do cilindro: ");
-            string altura = Console.ReadLine();
-            double a = double.Parse(altura);
-            Console.Write("Insere o raio do cilindro: ");
-            string raio = Console.ReadLine();
-            double r = double.Parse(raio);
-            double volume = Math.PI * Math.Pow(r, 2) * a;
-            double area = 2 * Math.PI * r * (r + a);
-            Console.WriteLine($"Volume = {Math.Round(volume, 3)}");
-            Console.WriteLine($"Área = {Math.Round(area, 3)}");
+            Console.Write("Insert the height of the cylinder: ");
+            string height = Console.ReadLine();
+            double h = double.Parse(height);
+
+            Console.Write("Insert the radius of the cylinder: ");
+            string radius = Console.ReadLine();
+            double r = double.Parse(radius);
+
+            double v = Math.PI * Math.Pow(r, 2) * h;
+            Console.WriteLine($"Volume of the Cylinder: {Math.Round(v, 3)}");
+
+            double superficiala = 2 * Math.PI * r * (r + h);
+            Console.WriteLine($"Superficial Area of the Cylinder: {Math.Round(superficiala, 3)}"); 
         }
     }
 }
