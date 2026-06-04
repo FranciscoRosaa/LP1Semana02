@@ -8,7 +8,8 @@ namespace ValoresEspeciais
     public class Program
     {
         /// <summary>
-        /// 
+        /// Prints the Max and Min values and the special values of all the 
+        /// different variable types.
         /// </summary>
         /// <param name="args">Not Used.</param>
         private static void Main(string[] args)
@@ -66,6 +67,20 @@ namespace ValoresEspeciais
             Console.WriteLine(mf);
             Console.WriteLine(md);
             Console.WriteLine(mdec);
+
+            float fpi = float.PositiveInfinity;
+            float fni = float.NegativeInfinity;
+            float fnan = float.NaN;
+            double dpi = double.PositiveInfinity;
+            double dni = double.NegativeInfinity;
+            double dnan = double.NaN;
+
+            Console.WriteLine(fpi);
+            Console.WriteLine(fni);
+            Console.WriteLine(fnan);
+            Console.WriteLine(dpi);
+            Console.WriteLine(dni);
+            Console.WriteLine(dnan);
         }
     }
 }
