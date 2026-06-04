@@ -9,13 +9,13 @@ namespace SmoothOperator
     public class Program
     {
         /// <summary>
-        /// Asks the user for a integrer number, converts the number into an
+        /// Asks the user for a int number, converts the number into an
         /// sbyte and decrements/increments that same number.
         /// </summary>
         /// <param name="args">Not Used.</param>
         private static void Main(string[] args)
         {
-            Console.Write("Insert an integrer number: ");
+            Console.Write("Insert an int number: ");
             string number = Console.ReadLine();
             sbyte snumber = sbyte.Parse(number);
 
