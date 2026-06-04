@@ -16,7 +16,7 @@ namespace VariousOperators
         /// <param name="args">Not used.</param>
         private static void Main(string[] args)
         {
-            Console.Write("Insert and non-negative int number: ");
+            Console.Write("Insert a non-negative int number: ");
             string number = Console.ReadLine();
             byte bnumber = byte.Parse(number);
 
